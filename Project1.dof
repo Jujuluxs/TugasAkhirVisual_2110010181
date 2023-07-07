@@ -105,6 +105,10 @@ HostApplication=
 Launcher=
 UseLauncher=0
 DebugCWD=
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
 [Version Info]
 IncludeVerInfo=0
 AutoIncBuild=0
@@ -119,3 +123,17 @@ Private=0
 DLL=0
 Locale=14345
 CodePage=1252
+[Excluded Packages]
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\fs7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\frxADO7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\fsADO7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\fsDB7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\fqb70.bpl=FastQueryBuilder 1.03
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\frxDB7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\frxBDE7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\fsBDE7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\frxDBX7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\frxIBX7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\fsIBX7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\frxTee7.bpl=(untitled)
+C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\fsTee7.bpl=(untitled)
