@@ -109,7 +109,6 @@ edt8.Enabled  := True ;
 edt9.Enabled  := True ;
 dtp1.Enabled := True;
 btn2.Enabled  := True;
-
 end;
 
 procedure TForm1.btn2Click(Sender: TObject);
