@@ -44,6 +44,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -182,6 +183,35 @@ procedure TForm2.btn5Click(Sender: TObject);
 begin
  frxrprt1.LoadFromFile(ExtractFilePath(Application.ExeName)+'\lapranortu.fr3');
  frxrprt1.ShowReport();
+end;
+
+procedure TForm2.btn2Click(Sender: TObject);
+begin
+zqry1.SQL.Clear;
+zqry1.SQL.Add('INSERT INTO data_ortu (nik, nama, jenis_kelamin, pendidikan, no_telpon, alamat, pekerjaan) VALUES (' +
+              QuotedStr(edtnik.Text) + ', ' +
+              QuotedStr(edtnama.Text) + ', ' +
+              QuotedStr(cbbjenisk.Text) + ', ' +
+              QuotedStr(edtpendidikan.Text) + ', ' +
+              QuotedStr(edtnotelepon.Text) + ', ' +
+              QuotedStr(edtalamat.Text) + ', ' +
+              QuotedStr(edtpekerjaan.Text) + ')');
+
+zqry1.ExecSQL;
+
+zqry1.SQL.Clear;
+zqry1.SQL.Add('select * from data_ortu');
+zqry1.Open;
+
+//fungsi clear
+edtnik.Text := '';
+  edtnama.Text := '';
+  cbbjenisk.ItemIndex := -1;
+  edtpendidikan.Text := '';
+  edtnotelepon.Text := '';
+  edtalamat.Text := '';
+  edtpekerjaan.Text := '';
+  btn2.Enabled := false;
 end;
 
 end.
