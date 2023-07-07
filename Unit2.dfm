@@ -138,7 +138,6 @@ object Form2: TForm2
     Height = 25
     Caption = 'Simpan'
     TabOrder = 7
-    OnClick = btn2Click
   end
   object btn3: TButton
     Left = 336
@@ -213,7 +212,6 @@ object Form2: TForm2
   end
   object zqry1: TZQuery
     Connection = con1
-    Active = True
     SQL.Strings = (
       'select * from data_ortu')
     Params = <>
