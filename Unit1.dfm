@@ -377,7 +377,6 @@ object Form1: TForm1
     Height = 25
     Caption = 'Batal'
     TabOrder = 19
-    OnClick = btn6Click
   end
   object con1: TZConnection
     ControlsCodePage = cGET_ACP

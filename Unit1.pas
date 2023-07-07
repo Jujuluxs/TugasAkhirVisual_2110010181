@@ -55,7 +55,6 @@ type
     procedure dbgrd1CellClick(Column: TColumn);
     procedure btn3Click(Sender: TObject);
     procedure btn4Click(Sender: TObject);
-    procedure btn6Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
   private
     { Private declarations }
@@ -234,24 +233,6 @@ zqry1.SQL.Clear;
     dtp1.Date := Now;
     btn2.Enabled := False;
 
-end;
-
-procedure TForm1.btn6Click(Sender: TObject);
-begin
-         edt1.Text := '';
-    edt2.Text := '';
-    edt3.Text := '';
-    edt4.Text := '';
-    edt5.Text := '';
-    edt6.Text := '';
-    cbb1.ItemIndex := -1;
-    cbb2.ItemIndex := -1;
-    cbb3.ItemIndex := -1;
-    edt7.Text := '';
-    edt8.Text := '';
-    edt9.Text := '';
-    dtp1.Date := Now;
-    btn2.Enabled := False;
 end;
 
 procedure TForm1.btn5Click(Sender: TObject);
